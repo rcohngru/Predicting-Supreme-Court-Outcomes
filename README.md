@@ -1,1 +1,1 @@
-# Predicting-Supreme-Court-Outcomes
+# Predicting Supreme Court Outcomes
