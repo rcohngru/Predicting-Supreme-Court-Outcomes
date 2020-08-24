@@ -37,7 +37,7 @@ The `vote` column is what I will be trying to predict.
 With all of the data cleaned and formatted in the way that I wanted it to be, I began conducting some basic exploration with it to get a better feel for what it looks like.
 
 <p align="center">
-  <img width="700" height="500" src="img/words_spoken.png">
+  <img width="900" height="500" src="img/words_spoken.png">
 </p>
 
 This is a plot of the total number of words spoken by each Justice during their tenure on the Supreme Court. As you can see, there are 3 Justices where lack of data may be an issue. For Brett Kavanaugh and Neil Gorsuch the reason for this lack of data is 
