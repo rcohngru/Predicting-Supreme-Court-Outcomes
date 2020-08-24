@@ -45,7 +45,7 @@ because of how recently they were nominated and approved to serve on the Court. 
 
 
 <p align="center">
-  <img width="1000" height="10000" src="img/vote_distribution.png">
+  <img width="1000" height="1000" src="img/vote_distribution.png">
 </p>
 
 The way each Justice votes is remarkably similar, despite the differences in their political idealogies. Each Justice tends to vote roughly 2/3 of the time in favor of the respondent, although this does not mean they all vote this way at the same time. I am not sure why this is the case--perhaps petitioners are more often the people interested in changing the Constitution and because the Court leans Conservative it is more likely to vote in favor of the respondent.
