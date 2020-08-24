@@ -33,4 +33,8 @@ Finally, I joined the justice CSVs with the decisions data from Washington Unive
 The `vote` column is what I will be trying to predict.
 
 ## Initial EDA
+
+<p align="center">
+  <img width="460" height="300" src="img/words_spoken.png">
+</p>
 ![words spoken by each justice](img/words_spoken.png)
