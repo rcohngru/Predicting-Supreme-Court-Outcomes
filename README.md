@@ -37,7 +37,7 @@ The `vote` column is what I will be trying to predict.
 With all of the data cleaned and formatted in the way that I wanted it to be, I began conducting some basic exploration with it to get a better feel for what it looks like.
 
 <p align="center">
-  <img width="700" height="350" src="img/words_spoken.png">
+  <img width="900" height="500" src="img/words_spoken.png">
 </p>
 
 This is a plot of the total number of words spoken by each Justice during their tenure on the Supreme Court. As you can see, there are 3 Justices where lack of data may be an issue. For Brett Kavanaugh and Neil Gorsuch the reason for this lack of data is 
@@ -45,7 +45,7 @@ because of how recently they were nominated and approved to serve on the Court. 
 
 
 <p align="center">
-  <img width="1000" height="10000" src="img/words_spoken.png">
+  <img width="900" height="900" src="img/vote_distribution.png">
 </p>
 
 The way each Justice votes is remarkably similar, despite the differences in their political idealogies. Each Justice tends to vote roughly 2/3 of the time in favor of the respondent, although this does not mean they all vote this way at the same time. I am not sure why this is the case--perhaps petitioners are more often the people interested in changing the Constitution and because the Court leans Conservative it is more likely to vote in favor of the respondent.
