@@ -18,17 +18,16 @@ I then created CSV files for each justice where each row corresponds to a unique
 
 Finally, I joined the justice CSVs with the decisions data from Washington University. Interestingly, the Washington University did not contain explicit data for how each justice voted--rather the data it contained was if the justice voted with the majority, and if the petitioning party won the case. I converted this data into a vote column using the following schema.
 
-|              | 0                                       | 1                                   |
-|--------------|-----------------------------------------|-------------------------------------|
-| vote         | voted for petitioner                    | voted against petitioner            |
-| partyWinning | no favorable disposition for petitioner | favorable dispostion for petitioner |
-| majority     | justice dissented                       | justice voted with majority         |
+|                | 0                                       | 1                                   |
+|----------------|-----------------------------------------|-------------------------------------|
+| `vote`         | voted for petitioner                    | voted against petitioner            |
+| `partyWinning` | no favorable disposition for petitioner | favorable dispostion for petitioner |
+| `majority`     | justice dissented                       | justice voted with majority         |
 
 
-|              | partyWinning = 0 | partyWinning = 1 |
-|--------------|------------------|------------------|
-| majority = 0 | vote = 1         | vote = 0         |
-| majority = 1 | vote = 0         | vote = 1         |
-|              |                  |                  |
+|                 | `partyWinning == 0` | `partyWinning == 1` |
+|-----------------|---------------------|---------------------|
+| `majority == 0` | `vote = 1`          | `vote = 0`          |
+| `majority == 1` | `vote = 0`          | `vote = 1`          |
 
 The `vote` column is what I will be trying to predict.
