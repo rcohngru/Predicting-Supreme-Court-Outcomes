@@ -25,9 +25,12 @@ Finally, I joined the justice CSVs with the decisions data from Washington Unive
 | `majority`     | justice dissented                       | justice voted with majority         |
 
 
-|                 | `partyWinning == 0` | `partyWinning == 1` |
+|                 | `partyWinning` == 0 | `partyWinning` == 1 |
 |-----------------|---------------------|---------------------|
-| `majority == 0` | `vote = 1`          | `vote = 0`          |
-| `majority == 1` | `vote = 0`          | `vote = 1`          |
+| `majority` == 0 | `vote` = 1          | `vote` = 0          |
+| `majority` == 1 | `vote` = 0          | `vote` = 1          |
 
 The `vote` column is what I will be trying to predict.
+
+## Initial EDA
+![words spoken by each justice](img/words_spoken.png)
