@@ -52,7 +52,7 @@ The way each Justice votes is remarkably similar, despite the differences in the
 This also helps establish a baseline for my machine learning models. If I were to always predict a Justice votes in favor of the respondent, I would be correct roughly 2/3 of the time for each Justice.
 
 <p align="center">
-  <img width="900" height="450" src="img/court_decisions.png">
+  <img width="800" height="560" src="img/court_decisions.png">
 </p>
 
 Using data from when Brett Kavanaugh joined the Supreme Court and onward we see that the court as a whole follows the same trend of favoring the respondent about 3/5 of the time. This also helps in establishing a baseline for the ensemble model to predict the outcome of each case. If I were to always predict that the Court votes in favor of the respondent, I would be correct roughly 3/5 of the time for each case.
