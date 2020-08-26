@@ -14,7 +14,7 @@ __Decisions__:
 ## Data Formatting & Cleaning
 
 <p align="center">
-  <img width="900" height="450" src="img/data_reformatting.png">
+  <img width="900" height="600" src="img/data_reformatting.png">
 </p>
 
 The Oyez data I started with was JSON formatted which is not particularly useful in this case. For each case I extracted relevant case information (docket, term, decision date, etc...) and the transcript of the oral arguments, and inserted it into a CSV file. The transcripts are broken up into portions depending on who is speaking. To start, I decided to make each portion its own row in the CSV. This is the [transcripts_by_justice.csv](https://github.com/rcohngru/Predicting-Supreme-Court-Outcomes/blob/master/data/transcripts_by_justice.csv) file.
@@ -74,7 +74,7 @@ To avoid redundancy in this README, going forward I will only use Justice Breyer
 The previous graphs tell me that there is a significant imbalance in the class distribution of the data. This is a problem--any model that I use will tend to skew towards the majority class simply because there is more of it. I don't want the *amount* of data to influence a classification, I want the content of the data to be the determining factor in a classification.
 
 <p align="center">
-  <img width="900" height="450" src="img/over_under_viz.png">
+  <img width="900" height="600" src="img/over_under_viz.png">
 </p>
 
 One method of accounting for a class imbalance in the data is to use **undersampling**. The concept behind undersampling is to randomly exclude some data in the majority class from the training set, so that the class distribution of the data follows an even 50/50 split. The key problem with undnersampling is that you end up with less data overall, which is never ideal.
