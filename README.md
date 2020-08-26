@@ -68,7 +68,7 @@ One method of accounting for a class imbalance in the data is to use **undersamp
 Another method of accounting for imbalance is to use **oversampling**. Oversampling works in a very similar manner to undersampling, the key difference being that in this case data from the minority class is duplicated to match the number of observations in the majority class. A problem with undersampling is that the presence of duplicate data may improperly influence the model.
 
 <p align="center">
-  <img width="800" height="560" src="img/balancing_comparison.png">
+  <img width="900" height="800" src="img/balancing_comparison.png">
 </p>
 
 Clearly, undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using oversampling or no balancing. Going forward, I will use undersampling when training my models.
