@@ -83,7 +83,7 @@ Another method of accounting for imbalance is to use **oversampling**. Oversampl
 
 **SMOTE** (Synthetic Minority Oversampling Technique), is a method of balancing that seeks to fix the problem with oversampling. Rather than randomly duplicating data in the minority class, SMOTE algorithmically creates synthetic data from the minority class, so that the presence of duplicates does not unduly weight the model.
 
-In the original SMOTE study, the authors recommended to try a combination of SMOTE and undersampling, so I will try that as well.
+In the original SMOTE paper, the authors recommended trying a combination of SMOTE and undersampling, so I will try that as well.
 
 <p align="center">
   <img width="900" height="1500" src="img/balancing_comparison.png">
@@ -96,3 +96,9 @@ Clearly, random undersampling is the balancing method to use in this situation. 
 I decided to start my modeling using the `sklearn` default versions of three classification models: Logistic Regression, Random Forests, and Gradient Boosting. Looking at the plot for undersampling it is not immediately obvious which of these models is superior, and none of them of are particularly good anyways.
 
 Let's try and improve the precision and recall scores for these models using some hyperparameter tuning.
+
+<p align="center">
+  <img width="900" height="300" src="img/breyer_rf.png">
+</p>
+
+After running a `GridSearchCV` model to find the optimal set of hyperparameters for Random Forests with undersampling, it's clear that there is not much in the way of an improvement between the default `sklearn` model and the optimized one. The difference between the recall and precisions scores is **ENTER DATA HERE**. 
