@@ -56,3 +56,25 @@ This also helps establish a baseline for my machine learning models. If I were t
 </p>
 
 Using data from when Brett Kavanaugh joined the Supreme Court and onward we see that the court as a whole follows the same trend of favoring the respondent about 3/5 of the time. This also helps in establishing a baseline for the ensemble model to predict the outcome of each case. If I were to always predict that the Court votes in favor of the respondent, I would be correct roughly 3/5 of the time for each case.
+
+To avoid redundancy in this README, going forward I will only use Justice Breyer's data to illustrate my process. Having spoken the most words out of any of the other Justices, his data will be the most useful.
+
+## Data Adjustments
+
+The previous graphs tell me that there is a significant imbalance in the class distribution of the data. This is a problem--any model that I use will tend to skew towards the majority class simply because there is more of it. I don't want the *amount* of data to influence a classification, I want the content of the data to be the determining factor in a classification.
+
+One method of accounting for a class imbalance in the data is to use **undersampling**. The concept behind undersampling is to exclude some data in the majority class from the training set, so that the class distribution of the data follows an even 50/50 split. A problem with undersampling is that it may cut out particularly useful data in the majority class.
+
+Another method of accounting for imbalance is to use **oversampling**. Oversampling works in a very similar manner to undersampling, the key difference being that in this case data from the minority class is duplicated to match the number of observations in the majority class. A problem with undersampling is that the presence of duplicate data may improperly influence the model.
+
+<p align="center">
+  <img width="800" height="560" src="img/balancing_comparison.png">
+</p>
+
+Clearly, undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using oversampling or no balancing. Going forward, I will use undersampling when training my models.
+
+## Modeling
+
+I decided to start my modeling using the `sklearn` default versions of three classification models: Logistic Regression, Random Forests, and Gradient Boosting. Looking at the plot for undersampling it is not immediately obvious which of these models is superior, and none of them of are particularly good anyways.
+
+Let's try and improve the precision and recall scores for these models using some hyperparameter tuning.
