@@ -14,7 +14,7 @@ __Decisions__:
 ## Data Formatting & Cleaning
 
 <p align="center">
-  <img width="900" height="350" src="img/data_reformatting.png">
+  <img width="900" height="400" src="img/data_reformatting.png">
 </p>
 
 The Oyez data I started with was JSON formatted which is not particularly useful in this case. For each case I extracted relevant case information (docket, term, decision date, etc...) and the transcript of the oral arguments, and inserted it into a CSV file. The transcripts are broken up into portions depending on who is speaking. To start, I decided to make each portion its own row in the CSV. This is the [transcripts_by_justice.csv](https://github.com/rcohngru/Predicting-Supreme-Court-Outcomes/blob/master/data/transcripts_by_justice.csv) file.
