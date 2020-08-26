@@ -37,11 +37,16 @@ The `vote` column is what I will be trying to predict.
 With all of the data cleaned and formatted in the way that I wanted it to be, I began conducting some basic exploration with it to get a better feel for what it looks like.
 
 <p align="center">
+  <img width="900" height="450" src="img/cases_per_justice.png">
+</p>
+
+The longest serving justices have heard the most cases, as is to be expected. Looking at this graph it is apparent that correctly predicting the votes for Justices Gorsuch and Kavanaugh may be be more challening due to lack of data. As the two newest justices--both appointed within the last few years--they have had fewer opportunities to speak.
+
+<p align="center">
   <img width="900" height="450" src="img/words_spoken.png">
 </p>
 
-This is a plot of the total number of words spoken by each Justice during their tenure on the Supreme Court. As you can see, there are 3 Justices where lack of data may be an issue. For Brett Kavanaugh and Neil Gorsuch the reason for this lack of data is 
-because of how recently they were nominated and approved to serve on the Court. However, that is not the case with Clarence Thomas--the famously Silent Justice. Thomas is known for rarely speaking in the Court, once going 10 years without asking a single question. Despite being the longest serving Justice, he has spoken the least out of any of his colleagues.
+The plot of the total number of words spoken by each Justice is similar to the number of cases, with one notable difference: Clarence Thomas. Thomas is commonly known as the 'Silent Justice' because of how infrequently he speaks during oral arguments. Fun fact: Justice Thomas once went 10 years without asking a single question during a session of the Supreme Court. There is also a smaller amount of data for Justices Gorsuch and Kavanaugh--this too can be attributed to how recently they were nominated to the position.
 
 <p align="center">
   <img width="900" height="900" src="img/vote_distribution.png">
