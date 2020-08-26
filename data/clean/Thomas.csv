@@ -1793,11 +1793,9 @@ term,caseName,justiceId,speakerName,text,cleanText,duration,decidedBy,arguedOn,p
 2017,Murphy v. Smith,108,Clarence Thomas,,,0.0,Roberts Court,"Dec 6, 2017",Charles Murphy,"Robert Smith, et al.",16-1067,"Aug 25, 2017","Feb 21, 2018",108.0,0.0,0.0,0.0,1
 2018,Republic of Sudan v. Harrison,108,Clarence Thomas,,,0.0,Case pending,"Nov 7, 2018",Republic of Sudan,"Rick Harrison, et al.",16-1094,"Jun 25, 2018",,108.0,1.0,0.0,0.0,0
 2018,United States v. Stitt,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 9, 2018",United States of America,"Victor J. Stitt, II",17-765,"Apr 23, 2018","Dec 10, 2018",108.0,1.0,0.0,0.0,0
-2018,Bucklew v. Precythe,108,Clarence Thomas,,,0.0,Case pending,"Nov 6, 2018",Russell Bucklew,"Anne Precythe, et al.",17-8151,"Apr 30, 2018",,108.0,0.0,0.0,0.0,1
 2018,"Knick v. Township of Scott, Pennsylvania",108,Clarence Thomas,,,0.0,Case pending,"Oct 3, 2018",Rose Mary Knick,"Township of Scott, Pennsylvania",17-647,"Mar 5, 2018",,108.0,1.0,0.0,0.0,0
 2018,Culbertson v. Berryhill,108,Clarence Thomas,,,0.0,Roberts Court,"Nov 7, 2018",Richard Allen Culbertson,"Nancy A. Berryhill, Deputy Commissioner for Operations, Social Security Administration",17-773,"May 21, 2018","Jan 8, 2019",108.0,1.0,0.0,0.0,0
 2018,Azar v. Allina Health Services,108,Clarence Thomas,,,0.0,Case pending,"Jan 15, 2019","Alex M. Azar, II, Secretary of Health and Human Services","Allina Health Services, et al.",17-1484,"Sep 27, 2018",,108.0,0.0,0.0,0.0,1
-2018,Apple v. Pepper,108,Clarence Thomas,,,0.0,Case pending,"Nov 26, 2018","Apple, Inc.","Robert Pepper, et al.",17-204,"Jun 18, 2018",,108.0,0.0,0.0,0.0,1
 2018,Helsinn Healthcare S.A. v. Teva Pharmaceuticals USA Inc.,108,Clarence Thomas,,,0.0,Roberts Court,"Dec 4, 2018",Helsinn Healthcare S.A.,"Teva Pharmaceuticals USA, Inc., et al.",17-1229,"Jun 25, 2018","Jan 22, 2019",108.0,0.0,0.0,0.0,1
 2018,Garza v. Idaho,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 30, 2018","Gilberto Garza, Jr.",Idaho,17-1026,"Jun 18, 2018","Feb 27, 2019",108.0,1.0,0.0,0.0,0
 2018,"Return Mail, Inc. v. United States Postal Service",108,Clarence Thomas,,,0.0,Case pending,"Feb 19, 2019","Return Mail, Inc.",United States Postal Service,17-1594,"Oct 26, 2018",,108.0,1.0,0.0,0.0,0
@@ -1807,32 +1805,24 @@ term,caseName,justiceId,speakerName,text,cleanText,duration,decidedBy,arguedOn,p
 2018,BNSF Railway Company v. Loos,108,Clarence Thomas,,,0.0,Case pending,"Nov 6, 2018",BNSF Railway Company,Michael D. Loos,17-1042,"May 14, 2018",,108.0,1.0,0.0,0.0,0
 2018,"Home Depot U.S.A., Inc. v. Jackson",108,Clarence Thomas,,,0.0,Case pending,"Jan 15, 2019","Home Depot U.S.A., Inc.",George W. Jackson,17-1471,"Sep 27, 2018",,108.0,0.0,0.0,0.0,1
 2018,Fourth Estate Public Benefit Corp. v. Wall-Street.com,108,Clarence Thomas,,,0.0,Case pending,"Jan 8, 2019",Fourth Estate Public Benefit Corporation,"Wall-Street.com, LLC, et al.",17-571,"Jun 28, 2018",,108.0,0.0,0.0,0.0,1
-2018,"Mission Product Holdings, Inc. v. Tempnology, LLC",108,Clarence Thomas,,,0.0,Case pending,"Feb 20, 2019","Mission Product Holdings, Inc.","Tempnology, LLC",17-1657,"Oct 26, 2018",,108.0,1.0,0.0,0.0,0
 2018,Nieves v. Bartlett,108,Clarence Thomas,,,0.0,Case pending,"Nov 26, 2018","Luis A. Nieves, et al.",Russell P. Bartlett,17-1174,"Jun 28, 2018",,108.0,1.0,0.0,0.0,0
 2018,Thacker v. Tennessee Valley Authority,108,Clarence Thomas,,,0.0,Case pending,"Jan 14, 2019","Gary Thacker, et ux.",Tennessee Valley Authority,17-1201,"Sep 27, 2018",,108.0,1.0,0.0,0.0,0
-2018,"Washington State Department of Licensing v. Cougar Den, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Oct 30, 2018",Washington State Department of Licensing,"Cougar Den, Inc.",16-1498,"Jun 25, 2018",,108.0,0.0,0.0,0.0,1
 2018,Franchise Tax Board of California v. Hyatt,108,Clarence Thomas,,,0.0,Case pending,"Jan 9, 2019",Franchise Tax Board of California,Gilbert P. Hyatt,17-1299,"Jun 28, 2018",,108.0,1.0,0.0,0.0,0
 2018,Lorenzo v. Securities and Exchange Commission,108,Clarence Thomas,,,0.0,Case pending,"Dec 3, 2018",Francis V. Lorenzo,Securities and Exchange Commission,17-1077,"Jun 18, 2018",,108.0,0.0,0.0,0.0,1
 2018,United States v. Haymond,108,Clarence Thomas,,,0.0,Case pending,"Feb 26, 2019",United States of America,Andre Ralph Haymond,17-1672,"Oct 26, 2018",,108.0,1.0,0.0,0.0,0
 2018,Herrera v. Wyoming,108,Clarence Thomas,,,0.0,Case pending,"Jan 8, 2019",Clayvin Herrera,Wyoming,17-532,"Jun 28, 2018",,108.0,1.0,0.0,0.0,0
 2018,Air and Liquid Systems Corp. v. Devries,108,Clarence Thomas,,,0.0,Case pending,"Oct 10, 2018","Air and Liquid Systems Corp., et al.","Roberta G. Devries, Administratrix of the Estate of John B. DeVries, Deceased, et. al.",17-1104,"May 14, 2018",,108.0,0.0,0.0,0.0,1
 2018,Merck Sharp & Dohme Corp. v. Albrecht,108,Clarence Thomas,,,0.0,Case pending,"Jan 7, 2019",Merck Sharp & Dohme Corp.,"Doris Albrecht, et al.",17-290,"Jun 28, 2018",,108.0,1.0,0.0,0.0,0
-2018,Dawson v. Steager,108,Clarence Thomas,,,0.0,Roberts Court,"Dec 3, 2018","James Dawson, et ux.","Dale W. Steager, West Virginia State Tax Commissioner",17-419,"Jun 25, 2018","Feb 20, 2019",108.0,1.0,0.0,0.0,0
 2018,New Prime Inc. v. Oliveira,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 3, 2018",New Prime Inc.,Dominic Oliveira,17-340,"Feb 26, 2018","Jan 15, 2019",108.0,0.0,0.0,0.0,1
 2018,Nutraceutical Corp. v. Lambert,108,Clarence Thomas,,,0.0,Roberts Court,"Nov 27, 2018",Nutraceutical Corporation,Troy Lambert,17-1094,"Jun 25, 2018","Feb 26, 2019",108.0,1.0,0.0,0.0,0
 2018,"Virginia Uranium, Inc. v. Warren",108,Clarence Thomas,,,0.0,Case pending,"Nov 5, 2018","Virginia Uranium, Inc. et al.",John Warren et al.,16-1275,"May 21, 2018",,108.0,0.0,0.0,0.0,1
-2018,Manhattan Community Access Corp. v. Halleck,108,Clarence Thomas,,,0.0,Case pending,"Feb 25, 2019","Manhattan Community Access Corporation, et al.","Deedee Halleck, et al.",17-1702,"Oct 12, 2018",,108.0,1.0,0.0,0.0,0
 2018,Nielsen v. Preap,108,Clarence Thomas,,,0.0,Case pending,"Oct 10, 2018","Kirstjen Nielsen, Secretary of Homeland Security, et al.","Mony Preap, et al.",16-1363,"Mar 19, 2018",,108.0,1.0,0.0,0.0,0
 2018,Stokeling v. United States,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 9, 2018",Denard Stokeling,United States of America,17-5554,"Apr 2, 2018","Jan 15, 2019",108.0,0.0,0.0,0.0,1
 2018,Weyerhaeuser Company v. United States Fish and Wildlife Service,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 1, 2018",Weyerhaeuser Company,"United States Fish and Wildlife Service, et al.",17-71,"Jan 22, 2018","Nov 27, 2018",108.0,1.0,0.0,0.0,0
 2018,Gamble v. United States,108,Clarence Thomas,,,0.0,Case pending,"Dec 6, 2018",Terance Martez Gamble,United States,17-646,"Jun 28, 2018",,108.0,0.0,0.0,0.0,1
-2018,The American Legion v. American Humanist Association,108,Clarence Thomas,,,0.0,Case pending,"Feb 27, 2019","The American Legion, et al.","American Humanist Association, et al.",17-1717,"Nov 2, 2018",,108.0,1.0,0.0,0.0,0
 2018,Henry Schein Inc. v. Archer and White Sales Inc.,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 29, 2018","Henry Schein, Inc., et al.","Archer and White Sales, Inc.",17-1272,"Jun 25, 2018","Jan 8, 2019",108.0,1.0,0.0,0.0,0
-2018,Mont v. United States,108,Clarence Thomas,,,0.0,Case pending,"Feb 26, 2019",Jason J. Mont,United States of America,17-8995,"Nov 2, 2018",,108.0,0.0,0.0,0.0,1
 2018,Biestek v. Berryhill,108,Clarence Thomas,,,0.0,Case pending,"Dec 4, 2018",Michael J. Biestek,"Nancy A. Berryhill, Deputy Commissioner for Operations, Social Security Administration",17-1184,"Jun 25, 2018",,108.0,0.0,0.0,0.0,1
 2018,Mount Lemmon Fire District v. Guido,108,Clarence Thomas,,,0.0,Roberts Court,"Oct 1, 2018",Mount Lemmon Fire District,"John Guido, et al.",17-587,"Feb 26, 2018","Nov 6, 2018",108.0,0.0,0.0,0.0,1
-2018,Timbs v. Indiana,108,Clarence Thomas,,,0.0,Roberts Court,"Nov 28, 2018",Tyson Timbs,Indiana,17-1091,"Jun 18, 2018","Feb 20, 2019",108.0,1.0,0.0,0.0,0
 2018,"Lamps Plus, Inc. v. Varela",108,Clarence Thomas,,,0.0,Case pending,"Oct 29, 2018","Lamps Plus, Inc., et al.",Frank Varela,17-988,"Apr 30, 2018",,108.0,1.0,0.0,0.0,0
 2018,Tennessee Wine and Spirits Retailers Association v. Blair,108,Clarence Thomas,,,0.0,Case pending,"Jan 16, 2019",Tennessee Wine and Spirits Retailers Association,"Zackary W. Blair, Interim Director of the Tennessee Alcoholic Beverage Commission, et al.",18-96,"Sep 27, 2018",,108.0,0.0,0.0,0.0,1
 2018,Sturgeon v. Frost,108,Clarence Thomas,,,0.0,Case pending,"Nov 5, 2018",John Sturgeon,"Bert Frost, in His Official Capacity as Alaska Regional Director of the National Park Service, et al.",17-949,"Jun 18, 2018",,108.0,1.0,0.0,0.0,0
-2018,"Rimini Street, Inc. v. Oracle USA, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Jan 14, 2019","Rimini Street, Inc., et al.","Oracle USA, Inc., et al.",17-1625,"Sep 27, 2018",,108.0,1.0,0.0,0.0,0
