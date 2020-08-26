@@ -68,15 +68,19 @@ To avoid redundancy in this README, going forward I will only use Justice Breyer
 
 The previous graphs tell me that there is a significant imbalance in the class distribution of the data. This is a problem--any model that I use will tend to skew towards the majority class simply because there is more of it. I don't want the *amount* of data to influence a classification, I want the content of the data to be the determining factor in a classification.
 
-One method of accounting for a class imbalance in the data is to use **undersampling**. The concept behind undersampling is to exclude some data in the majority class from the training set, so that the class distribution of the data follows an even 50/50 split. A problem with undersampling is that it may cut out particularly useful data in the majority class.
+One method of accounting for a class imbalance in the data is to use **undersampling**. The concept behind undersampling is to randomly exclude some data in the majority class from the training set, so that the class distribution of the data follows an even 50/50 split. The key problem with undnersampling is that you end up with less data overall, which is never ideal.
 
-Another method of accounting for imbalance is to use **oversampling**. Oversampling works in a very similar manner to undersampling, the key difference being that in this case data from the minority class is duplicated to match the number of observations in the majority class. A problem with undersampling is that the presence of duplicate data may improperly influence the model.
+Another method of accounting for imbalance is to use **oversampling**. Oversampling works in a very similar manner to undersampling, the key difference being that in this case data from the minority class is randomly duplicated to match the number of observations in the majority class. While this helps prevent scarcity of data being a problem as in undersampling, another issue presents itself: the presence of duplicate data in the minority class may improperly influence the model.
+
+**SMOTE** (Synthetic Minority Oversampling Technique), is a method of balancing that seeks to fix the problem with oversampling. Rather than randomly duplicating data in the minority class, SMOTE algorithmically creates synthetic data from the minority class, so that the presence of duplicates does not unduly weight the model.
+
+In the original SMOTE study, the authors recommended to try a combination of SMOTE and undersampling, so I will try that as well.
 
 <p align="center">
   <img width="900" height="900" src="img/balancing_comparison.png">
 </p>
 
-Clearly, undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using oversampling or no balancing. Going forward, I will use undersampling when training my models.
+Clearly, random undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using no balancing, random oversampling, SMOTE, or a combination of SMOTE and random undersampling. Going forward, I will use random undersampling when training my models.
 
 ## Modeling
 
