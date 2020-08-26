@@ -20,7 +20,7 @@ Finally, I joined the justice CSVs with the decisions data from Washington Unive
 
 |                | 0                                       | 1                                   |
 |----------------|-----------------------------------------|-------------------------------------|
-| `vote`         | voted for petitioner                    | voted against petitioner            |
+| `vote`         | voted against petitioner                    | voted for petitioner            |
 | `partyWinning` | no favorable disposition for petitioner | favorable dispostion for petitioner |
 | `majority`     | justice dissented                       | justice voted with majority         |
 
