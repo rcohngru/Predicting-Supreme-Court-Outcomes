@@ -86,7 +86,23 @@ Another method of accounting for imbalance is to use **oversampling**. Oversampl
 In the original SMOTE paper, the authors recommended trying a combination of SMOTE and undersampling, so I will try that as well.
 
 <p align="center">
-  <img width="900" height="1500" src="img/balancing_comparison.png">
+  <img width="900" height="350" src="img/breyer_nobalance.png">
+</p>
+
+<p align="center">
+  <img width="900" height="350" src="img/breyer_oversample.png">
+</p>
+
+<p align="center">
+  <img width="900" height="350" src="img/breyer_undersample.png">
+</p>
+
+<p align="center">
+  <img width="900" height="350" src="img/breyer_smote.png">
+</p>
+
+<p align="center">
+  <img width="900" height="350" src="img/breyer_both.png">
 </p>
 
 Clearly, random undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using no balancing, random oversampling, SMOTE, or a combination of SMOTE and random undersampling. Going forward, I will use random undersampling when training my models.
