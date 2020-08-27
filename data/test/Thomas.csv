@@ -1,11 +1,11 @@
-term,caseName,justiceId,speakerName,text,cleanText,duration,decidedBy,arguedOn,petitioner,respondent,docket,grantedOn,decidedOn,justice,partyWinning,direction,majority,vote
-2018,Bucklew v. Precythe,108,Clarence Thomas,,,0.0,Case pending,"Nov 6, 2018",Russell Bucklew,"Anne Precythe, et al.",17-8151,"Apr 30, 2018",,108.0,0.0,0.0,0.0,1
-2018,Apple v. Pepper,108,Clarence Thomas,,,0.0,Case pending,"Nov 26, 2018","Apple, Inc.","Robert Pepper, et al.",17-204,"Jun 18, 2018",,108.0,0.0,0.0,0.0,1
-2018,"Mission Product Holdings, Inc. v. Tempnology, LLC",108,Clarence Thomas,,,0.0,Case pending,"Feb 20, 2019","Mission Product Holdings, Inc.","Tempnology, LLC",17-1657,"Oct 26, 2018",,108.0,1.0,0.0,0.0,0
-2018,"Washington State Department of Licensing v. Cougar Den, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Oct 30, 2018",Washington State Department of Licensing,"Cougar Den, Inc.",16-1498,"Jun 25, 2018",,108.0,0.0,0.0,0.0,1
-2018,Dawson v. Steager,108,Clarence Thomas,,,0.0,Roberts Court,"Dec 3, 2018","James Dawson, et ux.","Dale W. Steager, West Virginia State Tax Commissioner",17-419,"Jun 25, 2018","Feb 20, 2019",108.0,1.0,0.0,0.0,0
-2018,Manhattan Community Access Corp. v. Halleck,108,Clarence Thomas,,,0.0,Case pending,"Feb 25, 2019","Manhattan Community Access Corporation, et al.","Deedee Halleck, et al.",17-1702,"Oct 12, 2018",,108.0,1.0,0.0,0.0,0
-2018,The American Legion v. American Humanist Association,108,Clarence Thomas,,,0.0,Case pending,"Feb 27, 2019","The American Legion, et al.","American Humanist Association, et al.",17-1717,"Nov 2, 2018",,108.0,1.0,0.0,0.0,0
-2018,Mont v. United States,108,Clarence Thomas,,,0.0,Case pending,"Feb 26, 2019",Jason J. Mont,United States of America,17-8995,"Nov 2, 2018",,108.0,0.0,0.0,0.0,1
-2018,Timbs v. Indiana,108,Clarence Thomas,,,0.0,Roberts Court,"Nov 28, 2018",Tyson Timbs,Indiana,17-1091,"Jun 18, 2018","Feb 20, 2019",108.0,1.0,0.0,0.0,0
-2018,"Rimini Street, Inc. v. Oracle USA, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Jan 14, 2019","Rimini Street, Inc., et al.","Oracle USA, Inc., et al.",17-1625,"Sep 27, 2018",,108.0,1.0,0.0,0.0,0
+term,caseName,justiceId,speakerName,text,cleanText,duration,decidedBy,arguedOn,petitioner,respondent,docket,grantedOn,decidedOn,justice,partyWinning,majority,direction,vote
+2018,Bucklew v. Precythe,108,Clarence Thomas,,,0.0,Case pending,"Nov 6, 2018",Russell Bucklew,"Anne Precythe, et al.",17-8151,"Apr 30, 2018",,108,0.0,1.0,0.0,0
+2018,Apple v. Pepper,108,Clarence Thomas,,,0.0,Case pending,"Nov 26, 2018","Apple, Inc.","Robert Pepper, et al.",17-204,"Jun 18, 2018",,108,0.0,0.0,0.0,1
+2018,"Mission Product Holdings, Inc. v. Tempnology, LLC",108,Clarence Thomas,,,0.0,Case pending,"Feb 20, 2019","Mission Product Holdings, Inc.","Tempnology, LLC",17-1657,"Oct 26, 2018",,108,1.0,1.0,1.0,1
+2018,"Washington State Department of Licensing v. Cougar Den, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Oct 30, 2018",Washington State Department of Licensing,"Cougar Den, Inc.",16-1498,"Jun 25, 2018",,108,0.0,0.0,0.0,1
+2018,Dawson v. Steager,108,Clarence Thomas,,,0.0,Roberts Court,"Dec 3, 2018","James Dawson, et ux.","Dale W. Steager, West Virginia State Tax Commissioner",17-419,"Jun 25, 2018","Feb 20, 2019",108,1.0,1.0,0.0,1
+2018,Manhattan Community Access Corp. v. Halleck,108,Clarence Thomas,,,0.0,Case pending,"Feb 25, 2019","Manhattan Community Access Corporation, et al.","Deedee Halleck, et al.",17-1702,"Oct 12, 2018",,108,1.0,1.0,0.0,1
+2018,The American Legion v. American Humanist Association,108,Clarence Thomas,,,0.0,Case pending,"Feb 27, 2019","The American Legion, et al.","American Humanist Association, et al.",17-1717,"Nov 2, 2018",,108,1.0,1.0,0.0,1
+2018,Mont v. United States,108,Clarence Thomas,,,0.0,Case pending,"Feb 26, 2019",Jason J. Mont,United States of America,17-8995,"Nov 2, 2018",,108,0.0,1.0,0.0,0
+2018,Timbs v. Indiana,108,Clarence Thomas,,,0.0,Roberts Court,"Nov 28, 2018",Tyson Timbs,Indiana,17-1091,"Jun 18, 2018","Feb 20, 2019",108,1.0,1.0,1.0,1
+2018,"Rimini Street, Inc. v. Oracle USA, Inc.",108,Clarence Thomas,,,0.0,Case pending,"Jan 14, 2019","Rimini Street, Inc., et al.","Oracle USA, Inc., et al.",17-1625,"Sep 27, 2018",,108,1.0,1.0,1.0,1
