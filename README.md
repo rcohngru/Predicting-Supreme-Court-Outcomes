@@ -93,9 +93,13 @@ Clearly, random undersampling is the balancing method to use in this situation. 
 
 ## Modeling
 
-I decided to start my modeling using the `sklearn` default versions of three classification models: Logistic Regression, Random Forests, and Gradient Boosting. Looking at the plot for undersampling it is not immediately obvious which of these models is superior, and none of them of are particularly good anyways.
+When determing which balancing method to use, I evaluted the results using the `sklearn` defaults of three classifications models: Logistic Regression, Random Forests, and Gradient Boosting Classifiers. Examining the plot for undersampling, it is not immediately obvious which, if any, model is superior. 
 
-Let's try and improve the precision and recall scores for these models using some hyperparameter tuning.
+Because of this, I decided to tune each of the models to see how precise I could get them to be. I also decided to add in an SVC Classifier to see if that model worked better.
+
+<p align="center">
+  <img width="900" height="350" src="img/breyer_lr.png">
+</p>
 
 <p align="center">
   <img width="900" height="350" src="img/breyer_rf.png">
@@ -105,11 +109,19 @@ Let's try and improve the precision and recall scores for these models using som
   <img width="900" height="350" src="img/breyer_gb.png">
 </p>
 
-After running a `GridSearchCV` model to find the optimal set of hyperparameters for Random Forests and Gradient Boosting Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one. In fact, the optimized versions actually performed worse than the defaults.
+<p align="center">
+  <img width="900" height="350" src="img/breyer_svc.png">
+</p>
 
-| Model        | Precision | Recall  |
-|--------------|-----------|---------|
-| Default RF   | 0.32743   | 0.45121 |
-| Optimized RF | 0.26016   | 0.39024 |
-| Default GB   | 0.3125    | 0.48780 |
-| Optimized GB | 0.24778   | 0.34146 |
+After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one, with the exception being the SVM Classifier.
+
+| Model         | Precision | Recall  |
+|---------------|-----------|---------|
+| Default LR    | 0.39370   | 0.56818 |
+| Optimized LR  | 0.33333   | 0.65909 |
+| Default RF    | 0.32608   | 0.51136 |
+| Optimized RF  | 0.46153   | 0.20454 |
+| Default GB    | 0.35606   | 0.53409 |
+| Optimized GB  | 0.32835   | 0.50000 |
+| Default SVC   | 0.35099   | 0.60227 |
+| Optimized SVC | 0.35497   | 0.93181 |
