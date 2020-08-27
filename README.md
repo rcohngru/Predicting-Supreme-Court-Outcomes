@@ -101,4 +101,15 @@ Let's try and improve the precision and recall scores for these models using som
   <img width="900" height="300" src="img/breyer_rf.png">
 </p>
 
-After running a `GridSearchCV` model to find the optimal set of hyperparameters for Random Forests with undersampling, it's clear that there is not much in the way of an improvement between the default `sklearn` model and the optimized one. The difference between the recall and precisions scores is **ENTER DATA HERE**. 
+<p align="center">
+  <img width="900" height="300" src="img/breyer_gb.png">
+</p>
+
+After running a `GridSearchCV` model to find the optimal set of hyperparameters for Random Forests and Gradient Boosting Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one. In fact, the optimized versions actually performed worse than the defaults.
+
+| Model        | Precision | Recall  |
+|--------------|-----------|---------|
+| Default RF   | 0.32743   | 0.45121 |
+| Optimized RF | 0.26016   | 0.39024 |
+| Default GB   | 0.3125    | 0.48780 |
+| Optimized GB | 0.24778   | 0.34146 |
