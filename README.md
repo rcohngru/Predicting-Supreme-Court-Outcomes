@@ -113,7 +113,7 @@ Because of this, I decided to tune each of the models to see how precise I could
   <img width="900" height="350" src="img/breyer_svc.png">
 </p>
 
-After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one, with the exception being the SVM Classifier.
+After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not much of an improvement between the default `sklearn` model and the optimized one, with the exceptions being the SVM and Logistic Regression Classifier in terms of Recall.
 
 | Default Model  | Precision | Recall  | Optimized Model | Precision | Recall  |
 |----------------|-----------|---------|-----------------|-----------|---------|
