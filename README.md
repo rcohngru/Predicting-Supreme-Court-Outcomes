@@ -98,11 +98,11 @@ I decided to start my modeling using the `sklearn` default versions of three cla
 Let's try and improve the precision and recall scores for these models using some hyperparameter tuning.
 
 <p align="center">
-  <img width="900" height="300" src="img/breyer_rf.png">
+  <img width="900" height="400" src="img/breyer_rf.png">
 </p>
 
 <p align="center">
-  <img width="900" height="300" src="img/breyer_gb.png">
+  <img width="900" height="400" src="img/breyer_gb.png">
 </p>
 
 After running a `GridSearchCV` model to find the optimal set of hyperparameters for Random Forests and Gradient Boosting Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one. In fact, the optimized versions actually performed worse than the defaults.
