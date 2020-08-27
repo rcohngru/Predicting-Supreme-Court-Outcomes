@@ -115,13 +115,9 @@ Because of this, I decided to tune each of the models to see how precise I could
 
 After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not an improvement between the default `sklearn` model and the optimized one, with the exception being the SVM Classifier.
 
-| Model         | Precision | Recall  |
-|---------------|-----------|---------|
-| Default LR    | 0.39370   | 0.56818 |
-| Optimized LR  | 0.33333   | 0.65909 |
-| Default RF    | 0.32608   | 0.51136 |
-| Optimized RF  | 0.46153   | 0.20454 |
-| Default GB    | 0.35606   | 0.53409 |
-| Optimized GB  | 0.32835   | 0.50000 |
-| Default SVC   | 0.35099   | 0.60227 |
-| Optimized SVC | 0.35497   | 0.93181 |
+| Default Model  | Precision | Recall  | Optimized Model | Precision | Recall  |
+|----------------|-----------|---------|-----------------|-----------|---------|
+| Logistic Reg.  | 0.39370   | 0.56818 | Logistic Reg.   | 0.33333   | 0.65909 |
+| Random Forest  | 0.32608   | 0.51136 | Random Forest   | 0.46153   | 0.20454 |
+| Gradient Boost | 0.35606   | 0.53409 | Gradient Boost  | 0.32835   | 0.50000 |
+| SVC            | 0.35099   | 0.60227 | SVC             | 0.35497   | 0.93181 |
