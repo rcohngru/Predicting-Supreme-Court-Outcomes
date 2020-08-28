@@ -57,21 +57,19 @@ The plot of the total number of words spoken by each Justice is similar to the n
   <img width="900" height="900" src="img/vote_distribution.png">
 </p>
 
-The way each Justice votes is remarkably similar, despite the differences in their political idealogies. Each Justice tends to vote roughly 2/3 of the time in favor of the respondent, although this does not mean they all vote this way at the same time. I am not sure why this is the case--perhaps petitioners are more often the people interested in changing the Constitution and because the Court leans Conservative it is more likely to vote in favor of the respondent.
-
-This also helps establish a baseline for my machine learning models. If I were to always predict a Justice votes in favor of the respondent, I would be correct roughly 2/3 of the time for each Justice.
+The way each Justice votes is remarkably similar, despite the differences in their political idealogies. Each Justice tends to vote in favor of the petitioner, although this does not mean they all vote this way at the same time. While I am not sure why this is the case, this does help establish a baseline for my machine learning models. The baseline would be to always predict in favor of the petitioner. Because the classes are imbalanced, the evaluation metrics most relevant are precision and recall. For the baseline, the recall value would be 1.0 and the precision value would be ~0.6.
 
 <p align="center">
   <img width="800" height="560" src="img/court_decisions.png">
 </p>
 
-Using data from when Brett Kavanaugh joined the Supreme Court and onward we see that the court as a whole follows the same trend of favoring the respondent about 3/5 of the time. This also helps in establishing a baseline for the ensemble model to predict the outcome of each case. If I were to always predict that the Court votes in favor of the respondent, I would be correct roughly 3/5 of the time for each case.
+Using data from when Brett Kavanaugh joined the Supreme Court and onward we see that the court as a whole follows the same trend of favoring the petitioner. This also helps in establishing a baseline for the ensemble model to predict the outcome of each case. If I were to always predict that the Court votes in favor of the petitioner, I would get recall and precision values 0f 1.0 and 0.6, respectively.
 
 To avoid redundancy in this README, going forward I will only use Justice Breyer's data to illustrate my process. Having spoken the most words out of any of the other Justices, his data will be the most useful.
 
 ## Data Adjustments
 
-The previous graphs tell me that there is a significant imbalance in the class distribution of the data. This is a problem--any model that I use will tend to skew towards the majority class simply because there is more of it. I don't want the *amount* of data to influence a classification, I want the content of the data to be the determining factor in a classification.
+The previous graphs tell me that there is a significant imbalance in the class distribution of the data. This is a problem because any model that I use will tend to skew towards the majority class simply because there is more of it. I don't want the *amount* of data to influence a classification, I want the content of the data to be the determining factor in a classification.
 
 <p align="center">
   <img width="900" height="350" src="img/over_under_viz.png">
@@ -105,13 +103,13 @@ In the original SMOTE paper, the authors recommended trying a combination of SMO
   <img width="900" height="350" src="img/breyer_both.png">
 </p>
 
-Clearly, random undersampling is the balancing method to use in this situation. The precision and recall values of the data are consistently higher in this case than when using no balancing, random oversampling, SMOTE, or a combination of SMOTE and random undersampling. Going forward, I will use random undersampling when training my models.
+Clearly, either no balancing or SMOTE seem to be the best balancing methods to use in this situation. The precision and recall values of the data are consistently higher in these two cases than when using the others. Going forward, I will use both SMOTE and no rebalancing when training my models.
 
 ## Modeling
 
-When determing which balancing method to use, I evaluted the results using the `sklearn` defaults of three classifications models: Logistic Regression, Random Forests, and Gradient Boosting Classifiers. Examining the plot for undersampling, it is not immediately obvious which, if any, model is superior. 
+When determing which balancing method to use, I evaluted the results using the `sklearn` defaults of four classifications models: Logistic Regression, Random Forests, Gradient Boosting, and Support Vecotr Machine Classifiers. Examining the plot for undersampling, it is not immediately obvious which, if any, model is superior. 
 
-Because of this, I decided to tune each of the models to see how precise I could get them to be. I also decided to add in an SVC Classifier to see if that model worked better.
+Because of this, I decided to tune each of the models to see how precise I could get them to be.
 
 <p align="center">
   <img width="900" height="350" src="img/breyer_lr.png">
@@ -129,7 +127,7 @@ Because of this, I decided to tune each of the models to see how precise I could
   <img width="900" height="350" src="img/breyer_svc.png">
 </p>
 
-After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not much of an improvement between the default `sklearn` model and the optimized one, with the exceptions being the SVM and Logistic Regression Classifier in terms of Recall.
+After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with both no rebalancing and SMOTE, it's clear that there is not much of an improvement between the default `sklearn` model and the optimized one, with the exceptions being the SVM and Logistic Regression Classifier in terms of Recall.
 
 | Model w/ No Balance | Precision | Recall  | Model w/ SMOTE | Precision | Recall  |
 |---------------------|-----------|---------|----------------|-----------|---------|
@@ -140,3 +138,31 @@ After running a `GridSearchCV` model to find the optimal set of hyperparameters 
 | Optimized GB        | 0.61628   | 1.00000 | Optimized GB   | 0.62753   | 0.96273 |
 | Default SVC         | 0.61628   | 1.00000 | Default SVC    | 0.61572   | 0.87578 | 
 | Optimized SVC       | 0.61628   | 1.00000 | Optimized SVC  | 0.62601   | 0.95652 |
+
+## Results
+
+At this point, I decided to move ahead using a SVC for my final testing. I opted to test with both SMOTE and no balancing, the results for No Balancing are shown below:
+
+<p align="center">
+  <img width="900" height="900" src="img/justice_matrix_test.png">
+</p>
+
+As can be seen, it turns out the models for each justice did exactly what I was hoping they would not--predict exclusively the majority class for the output. Unfortunately, this is the case for every model I tried, including densely connected neural networks. 
+
+<p align="center">
+  <img width="450" height="450" src="img/court_matrix_test.png">
+</p>
+
+I decided to ensemble the justice predictions anyways to predict the outcome of the cases and got a similar result. 
+
+## Next Steps
+
+It seems that I have reached the limit of the effectiveness of my data. I tried a number of different types of models, all with similar results. Going forward, I would want to supplement my data with the easily quantifiable following information:
+    - Ideology of each justice
+    - Number of times spoken
+    - Duration of speaking time
+    - Speaking to petitioner or respondent
+    
+Furthermore, I excluded the transcript data of everyone who was not a Justice during the oral arguments. I would like to find a way to incorporate this information both at the Justice-level and case-level for future models.
+
+Finally, I think it would be wise to pull data from the lower courts for Kavanaugh and Gorsuch. Being relatively new Justices, they have not spoken much, but I think supplementing the data with this information may be useful. Unfortunately, the same case can not be made for Clarence Thomas. If I ever meet him, I will advise him to ask more questions so that I can supplement my data with it.
