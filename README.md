@@ -131,12 +131,12 @@ Because of this, I decided to tune each of the models to see how precise I could
 
 After running a `GridSearchCV` model to find the optimal set of hyperparameters for all four types of Classifiers with undersampling, it's clear that there is not much of an improvement between the default `sklearn` model and the optimized one, with the exceptions being the SVM and Logistic Regression Classifier in terms of Recall.
 
-| Model          | Precision | Recall  |
-|----------------|-----------|---------|
-| Logistic Reg.  | 0.61479   | 0.99371 |
-| Default RF     | 0.61508   | 0.97484 |
-| Optimized RF   | 0.61628   | 1.00000 |
-| Default GB     | 0.60811   | 0.84906 | 
-| Optimized GB   | 0.61628   | 1.00000 |
-| Default SVC    | 0.61628   | 1.00000 | 
-| Optimized SVC  | 0.61628   | 1.00000 |
+| Model w/ No Balance | Precision | Recall  | Model w/ SMOTE | Precision | Recall  |
+|---------------------|-----------|---------|----------------|-----------|---------|
+| Logistic Reg.       | 0.61479   | 0.99371 | Logistic Reg.  | 0.62360   | 0.68944 |
+| Default RF          | 0.61508   | 0.97484 | Default RF     | 0.62661   | 0.90683 |
+| Optimized RF        | 0.61508   | 0.97484 | Optimized RF   | 0.62447   | 0.91925 |
+| Default GB          | 0.60811   | 0.84906 | Default GB     | 0.62564   | 0.75776 |
+| Optimized GB        | 0.61628   | 1.00000 | Optimized GB   | 0.62753   | 0.96273 |
+| Default SVC         | 0.61628   | 1.00000 | Default SVC    | 0.61572   | 0.87578 | 
+| Optimized SVC       | 0.61628   | 1.00000 | Optimized SVC  | 0.62601   | 0.95652 |
